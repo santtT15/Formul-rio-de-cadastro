@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem e Botões</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; /* Centraliza os botões verticalmente */
+            height: 100vh;
+            background-color: #f5f5f5; /* Cor de fundo suave */
+            position: relative; /* Para permitir o posicionamento da imagem */
+        }
+
+        /* Estilo para a imagem do logo no lado esquerdo */
+        img.logo { 
+            position: absolute;
+            top: 20px; /* Distância do topo */
+            left: 20px; /* Distância do lado esquerdo */
+            max-width: 300px; /* Ajuste o tamanho da imagem para não ficar muito grande */
+        }
+
+        /* Estilo para a imagem "iE" */
+        .ie-image {
+            max-width: 200px; /* Ajuste o tamanho da imagem "iE" */
+            margin-bottom: 20px; /* Espaço abaixo da imagem "iE" */
+        }
+
+        .button-container { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 20px; 
+        }
+
+        /* Novo estilo para o container dos botões */
+        .button-with-icon {
+            display: flex; /* Alinha os elementos em linha */
+            align-items: center; /* Alinha verticalmente os itens */
+            gap: 10px; /* Espaço entre o botão e a imagem */
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        button { 
+            width: 150px; 
+            height: 50px; 
+            border: none; 
+            border-radius: 10px; 
+            background-color: white; /* Fundo branco para os botões */
+            color: #4CAF50; /* Cor do texto do botão (verde) */
+            font-size: 16px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover { 
+            background-color: #4CAF50; /* Fundo verde quando o mouse passa sobre o botão */
+            color: white; /* Cor do texto em branco quando o botão é pressionado */
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagem logo no lado esquerdo -->
+    <img src="logo.jpg" alt="Descrição da imagem" class="logo">
+    
+    <!-- Imagem "iE" abaixo da imagem do logo -->
+    <img src="iE.jpg" alt="Imagem iE" class="ie-image">
+
+    <div class="button-container">
+        <!-- Título acima dos botões -->
+        <h2>Quem deseja fazer login?</h2>
+        
+        <!-- Container para o botão "Professor" e a imagem "icon" à esquerda -->
+        <div class="button-with-icon">
+            <img src="icon.png" alt="Imagem icon" class="icon-image" style="max-width: 30px; height: auto;">
+            <a href="PProfessor.html"><button>Professor</button></a>
+        </div>
+        
+        <!-- Container para o Botão "Aluno" e a imagem "icon" à esquerda -->
+        <div class="button-with-icon">
+            <img src="icon.png" alt="Imagem icon" class="icon-image" style="max-width: 30px; height: auto;">
+            <a href="PAluno.html"><button>Aluno</button></a>
+        </div>
+    </div>
+</body>
+</html>
